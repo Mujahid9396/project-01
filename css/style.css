@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-orange {
+    color: #fba419;
+}
+
+
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: #4169e1;
+    position: fixed;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 90px;
+    font-weight: 700;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.bars-btn {
+    color: #fff;
+    line-height: 70px;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    padding-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Home Section Start */
+
+#home-section {
+    background-image: url(../img/head-bg.jpg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-section {
+    background: url(../img/head-bg.jpg) no-repeat center;
+    margin-top: 0;
+    padding-top: 0;
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+}
+
+#home-section .home-text {
+    width: 580px;
+    height: auto;
+    padding-top: 200px;
+    margin-left: 100px;
+}
+
+#home-section .home-text h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 63px;
+}
+
+#home-section .home-text p {
+    font-size: 24px;
+    color: #ffffffbd;
+}
+
+.btn {
+    height: 60px;
+    width: 160px;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    background-color: #2054ee;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    outline: none;
+    border: none;
+    transition: 1s;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* About Section Start */
+
+#about-section, #contact-section{
+    padding: 50px 0;
+}
+
+.text {
+    width: 48%;
+    float: left;
+}
+
+.progress {
+    width: 48%;
+    float: left;
+}
+
+.progress {
+    float: left;
+}
+
+.about-text h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.about-text h5 {
+    color: #5e6565;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.about-text h3 {
+    font-size: 30px;
+}
+
+.about-text .text {
+    padding: 25px 90px;
+}
+
+/* About Section End */
+.progress h2 {
+    margin-top: -14px;
+}
+
+.skills-bar {
+    display: grid;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+.skills-bar .bar {
+    margin: 15px 0;
+}
+
+.skills-bar .bar:first-child {
+    margin-top: 0;
+}
+
+.skills-bar .bar .info span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skills-bar .bar .line {
+    height: 13px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: darkgray;
+    position: relative;
+}
+
+.bar .line span {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    background: #6665ee;
+    border-radius: 10px;
+}
+
+.skills-bar .bar .html span {
+    width: 90%;
+}
+
+.skills-bar .bar .css span {
+    width: 80%;
+}
+
+.skills-bar .bar .bt-strap span {
+    width: 85%;
+}
+
+.skills-bar .bar .js span {
+    width: 60%;
+}
+
+
+.skills-bar .bar .line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.skills-bar .bar .line span::after {
+    position: absolute;
+
+    top: -25px;
+    right: 0;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.skills-bar .bar .html span::after {
+    content: "90%";
+}
+
+.skills-bar .bar .css span::after {
+    content: "80%";
+}
+
+.skills-bar .bar .bt-strap span::after {
+    content: "85%";
+}
+
+.skills-bar .bar .js span::after {
+    content: "60%";
+}
+
+/* About Section End */
+
+
+/* Contact Section Start */
+/*
+.contact-form {
+    margin-top: 20px;
+    position: relative;
+}
+*/
+
+.contact-form h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.contact-form h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact-form .contact-text{
+    font-size: 16px;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-form{
+    width: 50%;
+    margin: auto;
+}
+
+.main-form .contactForm{
+    width: 100%;
+}
+.main-form .contactForm input,
+.main-form .contactForm textarea
+{
+    width: 100%;
+    line-height: 50px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+button.btn.sub-btn:hover {
+    border: 3px solid red;
+}
+
+.font-awesome{
+    margin-top: 30px;
+}
+
+.contact{
+    width: 33%;
+    float: left;
+    text-align: center;
+    
+    
+    
+}
+
+.font-awesome{
+    width: 65%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+
+i.fas {
+    font-size: 30px;
+}
+
+.font-awesome .contact h5{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/* Contact Section End */
+
+/* CopyRight Section Start */
+#copyRight{
+    clear: both;
+   
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.space{
+    margin-top: 30px;
+}
+.copy{
+    
+}
+
+/* CopyRight Section End */
+

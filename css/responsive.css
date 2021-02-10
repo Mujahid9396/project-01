@@ -1,0 +1,39 @@
+@media screen and (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 25px;
+  }
+  ul li a {
+    font-size: 18px;
+  }
+    
+    #home-section .home-text{
+        margin-left: 30px;
+    }
+    
+    .about-text .text{
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+  .bars-btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    background-color: #6e00ffc4;
+    transition: 0.5s;
+  }
+  nav ul li {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+} ;
